@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  api:
+    image: covid_19_api
+    build:
+      context: ./covid_19_api
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    command: php -S 0.0.0.0:8080 public/index.php
+  vue:
+    image: covid_19_vue
+    build: 
+      context: ./covid_19_vue
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    command: nginx -g "daemon off;"
