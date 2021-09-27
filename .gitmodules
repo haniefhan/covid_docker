@@ -1,0 +1,6 @@
+[submodule "covid_19_api"]
+	path = covid_19_api
+	url = https://github.com/haniefhan/covid_19_api.git
+[submodule "covid_19_vue"]
+	path = covid_19_vue
+	url = https://github.com/haniefhan/covid_19_vue.git
